@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import SwapButton from '../components/SwapButton.astro'
 import WppButton from '../components/WppButton.astro'
 import Home from '../pages/Home.astro';
 import About from '../pages/About.astro';
@@ -10,15 +11,15 @@ import Footer from './Footer.astro';
 <Layout title="ink title">
 	<main>
 		<Home />
-		<div class="flex flex-col w-full"> 
+		<div class="flex flex-col w-full bg-black"> 
 			<div class="divider"></div> 
 		</div>
 		<About />
-		<div class="flex flex-col w-full"> 
+		<div class="flex flex-col w-full bg-black"> 
 			<div class="divider"></div> 
 		</div>
 		<Projects />
-		<div class="flex flex-col w-full"> 
+		<div class="flex flex-col w-full bg-black"> 
 			<div class="divider"></div> 
 		</div>
 	</main>
