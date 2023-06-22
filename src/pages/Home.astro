@@ -3,8 +3,10 @@ import SwapButton from '../components/SwapButton.astro'
 
 ---
 <article data-theme="lofi">
-    <div class="hero min-h-screen min-w-full bg-[url(/imgs/tattoo-machine-background.jpg)]">
-        <div class="hero-overlay bg-opacity-80"></div>
+    <div class="hero min-h-screen min-w-full 
+        max-[768px]:bg-[url(/imgs/tattoo-machine-background.jpg)] 
+        min-[769px]:bg-[url(/imgs/tattoo_desktop.jpg)]">
+        <div class="hero-overlay bg-opacity-80 min-w-full"></div>
         <div class="hero-content text-center text-neutral-content">
           <SwapButton />
           <div class="max-w-md">
